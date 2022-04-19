@@ -1,0 +1,22 @@
+.login-header{
+	padding: 0;
+}
+.login-header-items{
+	padding: 0;
+    list-style: none;
+    text-align: left;
+    display: flex;
+}
+.login-header-items-element a{
+	color: #000;
+	font-weight: 400;
+	font-size: 17px;
+}
+.login-header-items-element:hover a{
+	color: #80bb35;
+}
+.login-header-items-element-name strong{
+	color: #80bb35;
+    font-weight: 400;
+    font-size: 17px;
+}

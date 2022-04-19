@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DuaLeoX-Giao Diện tùy biến cực mạnh trên Sapo Dualeo-X</title>
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reponsive.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+    <!-- hỗ trợ  các trình duyệt cũ reponsive -->
+    <!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+    
+    <!-- slick carousel product -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+    <!-- end slick carousel product -->
+</head>
+<body onload="setupEven()">
+	<!-- header -->
+	<div class="header">
+		<div class="header-center">
+			<ul class="header-center-left">
+				<li class="header-center-left-l">Hotline:<p style="font-weight: 700">&#160;0912117494</p> </li>
+				<li class="header-center-left-r"><p style="font-weight: 700">Địa chỉ</p>: Hồ Gươm, Vietnam</li>
+			</ul>
+			<div class="header-center-right">
+				<i class="fas fa-user"></i>
+				<a href="file:///D:/khoGiaoDien1_thucPham/login.html"> Đăng Nhập</a>
+				<p>hoặc</p>
+				<a href="">Đăng Ký</a>
+			</div>
+		</div>
+	</div>
+	<!-- menu mobile tablet-->
+	<label for="nav-input-mobile-tablet" class="menu-mobile-tablet"><i class="fas fa-bars"></i></label> 
+    <input type="checkbox" hidden name="" class="nav-input-check" id="nav-input-mobile-tablet">
+    <label for="nav-input-mobile-tablet" class="overlay-mobile-tablet"></label> 
+    <nav class="header-menu_mobile-tablet">
+        <ul class="nav_mobile-tablet-list">
+            <li>
+                <a class="nav_mobile-tablet-link" href="#">Trang chủ</a>
+            </li>
+            <li>
+                <a class="nav_mobile-tablet-link" href="#">Giới thiệu</a>
+            </li>
+            <li>
+                <a class="nav_mobile-tablet-link" href="#">Sản phẩm</a>
+            </li>
+            <li>
+                <a class="nav_mobile-tablet-link" href="#">Khuyến mãi & Sự kiện</a>
+            </li>
+            <li>
+                <a class="nav_mobile-tablet-link" href="#">Tin tức</a>
+            </li>
+        </ul>
+    </nav>  
+    <!--end menu mobile tablet-->    
+	<div class="header-mid">
+		<div class="header-mid-content row">
+		     
+			<div  class="logo-left col-md-3 col-lg-3">
+				<img src="images/header/logo1.png" alt="#">
+			</div>
+			<div class="header-mid-container  col-md-8 col-lg-7">
+				<div class="header-mid-item ">
+					<a ><img src="images/header/logo2.png" alt=""></a>
+					<div class="header-mid-item-content">
+						<a href="" class="header-mid-item-content-top">Miễn phí vận chuyển</a>
+						<p class="header-mid-item-content-bottom">Bán kính 100 km</p>
+					</div>
+				</div>
+				<div class="header-mid-item ">
+					<a ><img src="images/header/logo3.png" alt=""></a>
+					<div class="header-mid-item-content">
+						<a href="" class="header-mid-item-content-top">Hỗ trợ 24/7</a>
+						<p class="header-mid-item-content-bottom">Hotline: <a style="font-weight: 700; color: #000;" href="">19001009</a></p>
+					</div>
+				</div>
+				<div class="header-mid-item">
+					<a ><img src="images/header/logo4.png" alt=""></a>
+					<div class="header-mid-item-content">
+						<a href="" class="header-mid-item-content-top">Giờ làm việc</a>
+						<p class="header-mid-item-content-bottom">T2-T7 Giờ hành chính</p>
+					</div>
+				</div>
+			</div>
+			<div style="padding: 0;text-align: end;" class="col-md-1 col-lg-2">
+				<div class="header-cart">
+					<i class="fa fa-shopping-bag"></i>
+					<div class="right-content">
+						<span class="label">Giỏ hàng</span>
+					</div>
+					<span class="cartCount" id="cart-total">0</span>
+				</div>
+				<div class="header-cart-reponsive">
+					<i class="fas fa-shopping-bag"></i>
+					<div class="cart">
+						<span class="cartCount-reponsive" id="cart-total">0</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-footer sticky-top">
+		<nav class=" header-footer-content navbar navbar-expand-lg navbar-light bg-light">
+	  		<a class="header-footer-home navbar-brand" href="#">Trang chủ</a>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    		<ul class="header-footer-nav navbar-nav mr-auto">
+	      			<li class="header-footer-items nav-item active">
+	        			<a class=" nav-link" href="#">Sản phẩm
+	        				<i class="fas fa-angle-right"></i>
+	        			</a>
+						<div  class="header-footer-hover">
+	        				<div class="header-footer-hover-items">
+	        					<H5 class="header-footer-title">Rau củ</H5>
+	        					<ul class="header-footer-element">
+	        						<a href=""><li class="header-footer-element-child">Rau tươi</li></a>
+	        						<a href=""><li class="header-footer-element-child">Rau vườn</li></a>
+	        						<a href=""><li class="header-footer-element-child">Rau sạch</li></a>
+	        						<a href=""><li class="header-footer-element-child">Rau củ nhập khẩu</li></a>
+	        					</ul>
+	        				</div>
+	        				<div class="header-footer-hover-items">
+	        					<H5 class="header-footer-title">Hoa quả</H5>
+	        					<ul class="header-footer-element">
+	        						<a href=""><li class="header-footer-element-child">Trái cây tươi</li></a>
+	        						<a href=""><li class="header-footer-element-child">Hoa quả sạch</li></a>
+	        						<a href=""><li class="header-footer-element-child">Hoa quả nhập khẩu</li></a>
+	        						<a href=""><li class="header-footer-element-child">Hoa quả tươi</li></a>
+	        					</ul>
+	        				</div>
+	        				<div class="header-footer-hover-items">
+	        					<H5 class="header-footer-title">Thịt</H5>
+	        					<ul class="header-footer-element">
+	        						<a href=""><li class="header-footer-element-child">Thịt gà</li></a>
+	        						<a href=""><li class="header-footer-element-child">Thịt lươn</li></a>
+	        						<a href=""><li class="header-footer-element-child">Thịt bò</li></a>
+	        						<a href=""><li class="header-footer-element-child">Thịt vịt</li></a>
+	        					</ul>
+	        				</div>
+	        				<div class="header-footer-hover-items">
+	        					<H5 class="header-footer-title">Hải Sản</H5>
+	        					<ul class="header-footer-element">
+	        						<a href=""><li class="header-footer-element-child">Ngao</li></a>
+	        						<a href=""><li class="header-footer-element-child">Sò huyết</li></a>
+	        						<a href=""><li class="header-footer-element-child">Cua</li></a>
+	        						<a href=""><li class="header-footer-element-child">Tôm</li></a>
+	        					</ul>
+	        				</div>
+	        			</div>
+	        		</li>
+	      			<li class="header-footer-items nav-item">
+	        			<a class="nav-link" href="#">Giới thiệu</a>	
+	      			</li>
+	      			<li class="nav-item header-footer-items">
+	        			<a class="nav-link" href="#">Tin tức <i class="fas fa-angle-right"></i></a>
+	        			<ul class="header-footer-element-hover">
+							<a href=""><li class="header-footer-element-child">Tin mới</li></a>
+							<a href=""><li class="header-footer-element-child">Tin quốc tế</li></a>
+							<a href=""><li class="header-footer-element-child">Tin trong nước</li></a>
+	        			</ul>
+	        		</li>
+			      	<li class="nav-item header-footer-items">
+			        	<a class="nav-link " href="#">Liên hệ</a>
+			      	</li>
+			      	<li class="nav-item header-footer-items">
+			        	<a class="nav-link " href="#">Chỉ đường</a>
+			      	</li>
+	    		</ul>
+				<form class="navbar-form navbar-left" action="/action_page.php">
+				  <div class="input-group input-group-seach">
+				    <input type="text" class="form-control" placeholder="Search">
+				    <button class="btn btn-default" type="submit">
+				        <i class="fas fa-search"></i>
+				     </button>
+				  </div>
+				</form>
+	  		</div>
+		</nav>
+	</div>
+	<!--end  header -->
+	<div class="container-mid">
+		<div class="row container-mid-content padding-items">
+			<div style="padding-left: 0" class="col-md-3">
+				<div class="container-mid-title">
+					<div class="banner-left">DANH MỤC</div>
+					<ul class="banner-left-menu">
+						<li class="banner-left-menu-item">
+							<a href="" class="banner-left-menu-item-link">
+								<i class="fas fa-arrow-circle-right"></i>
+								Rau sạch
+							</a>
+						</li>
+						<li class="banner-left-menu-item">
+							<a href="" class="banner-left-menu-item-link">
+								<i class="fas fa-arrow-circle-right"></i>
+								Thịt tươi
+								<i style="float: right;padding: 3px;" class="fa fa-angle-right arrow"></i>
+							</a>
+							<div class="buffer"></div>
+							<ul class="banner-left-menu-hover-items">
+								<li class="banner-left-menu-hover-items-contents"><a class="banner-left-menu-hover-items-contents-link" href="">Menu demo 1</a></li>
+								<li class="banner-left-menu-hover-items-contents"><a class="banner-left-menu-hover-items-contents-link" href="">Menu demo 2</a></li>
+								<li class="banner-left-menu-hover-items-contents"><a class="banner-left-menu-hover-items-contents-link" href="">Menu demo 3</a></li>
+								<li class="banner-left-menu-hover-items-contents"><a class="banner-left-menu-hover-items-contents-link" href="">Menu demo 4</a></li>
+							</ul>
+						</li>
+						<li class="banner-left-menu-item">
+							<a href="" class="banner-left-menu-item-link">
+								<i class="fas fa-arrow-circle-right"></i>
+								Hải sản tươi
+							</a>
+						</li>
+						<li class="banner-left-menu-item">
+							<a href="" class="banner-left-menu-item-link">
+								<i class="fas fa-arrow-circle-right"></i>
+								Hoa quả tươi
+							</a>
+						</li>
+						<li class="banner-left-menu-item">
+							<a href="" class="banner-left-menu-item-link">
+								<i class="fas fa-arrow-circle-right"></i>
+								Nhập khẩu
+							</a>
+						</li>
+						<li class="banner-left-menu-item">
+							<a href="" class="banner-left-menu-item-link">
+								<i class="fas fa-arrow-circle-right"></i>
+								Cá nhật bản
+							</a>
+						</li>
+						<li class="banner-left-menu-item">
+							<a href="" class="banner-left-menu-item-link">
+								<i class="fas fa-arrow-circle-right"></i>
+								Rau đà lạt
+							</a>
+						</li>
+						<li class="banner-left-menu-item">
+							<a href="" class="banner-left-menu-item-link">
+								<i class="fas fa-arrow-circle-right"></i>
+								Hoa quả nhập
+							</a>
+						</li>
+						<li class="banner-left-menu-item">
+							<a href="" class="banner-left-menu-item-link">
+								<i class="fas fa-arrow-circle-right"></i>
+								Xem thêm
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="banner-containar col-md-9">
+				<div class="banner-right">
+					<a href="" class="banner-right-link">
+						<img src="images/container/img.jpg" alt="" class="banner-right-img">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class=" row container-mid-content-bottom">
+			<div class="padding-left-none col-md-4">
+				<img src="images/container/banner1.jpg" alt="" class="container-imgs-slide">
+			</div>
+			<div class="padding-left-none col-md-4">
+				<img src="images/container/banner2.jpg" alt="" class="container-imgs-slide">
+			</div>
+			<div class="padding-right-none col-md-4">
+				<img src="images/container/banner3.jpg" alt="" class="container-imgs-slide">
+			</div>
+		</div>
+	</div>
+	<section id="section-box-1" class="container-P">
+		<div class="container-product">
+			<div class="container-product-top">
+				<div class="container-product-top-left">
+					<h2 class="container-product-top-title">TRÁI CÂY MỖI NGÀY</h2>
+				</div>
+				<div class="container-product-top-right">
+					<ul class="container-product-top-list">
+						<a id="green" href="#box-1"><li style="padding-right: 20px;" class="container-product-top-list-item">Rau quả</li></a>
+						<a id="green" href="#box-2"><li style="padding: 0 10px;" class="container-product-top-list-item">Hoa quả</li></a>
+						<a href="#box-3"><li style="padding: 0 10px;" class="container-product-top-list-item">Thịt</li></a>
+						<a href="#box-4"><li style="padding-left: 20px;" class="container-product-top-list-item">Hải sản</li></a>
+					</ul>
+				</div>
+			</div>
+			<div class="container-product-bottom ">
+				<div class="container-product-bottom-list row slider">
+					<div id="box-1" class="container-product-bottom-list-padding col-sm-12  ">
+						<div class="product-bottom-content">
+							<a href=""><img class="product-content-img-element" src="images/container/product/img1.jpg" alt=""></a>
+							<div class="product-element-overlay-bachground"></div>
+							<div class="product-element-overlay">
+								<div  class="product-element-overlay-items">
+									<a onclick="addcart(this)" class="overlay-add-cart ">
+		                            <i  class="fa fa-shopping-cart overlay-add-cart-icon"></i>
+		                        	</a>
+								</div>
+								<div class="product-element-overlay-items-cart">
+									<a href="#" class="overlay-view "  >
+		                            <i class="fa fa-eye overlay-view-icon"></i>
+		                        	</a>
+								</div>
+		                    </div>
+		               
+		                    <div class="product-content-element-title">
+		                        <a href=""><p>Vải thiều loại to</p></a>
+		                    </div>
+		                    <div class="product-content-element-price">
+		                        <span class="product-content-element-price-current"> 80.000₫ </span>
+		                    </div>
+						</div>
+					</div>
+					<div class="container-product-bottom-list-padding col-sm-12 ">
+						<div class="product-bottom-content">
+							<a href=""><img class="product-content-img-element" src="images/container/product/img2.jpg" alt=""></a>
+							<div class="product-element-overlay-bachground"></div>
+							<div class="product-element-overlay">
+								<div  class="product-element-overlay-items">
+									<a onclick="addcart(this)" class="overlay-add-cart ">
+		                            <i  class="fa fa-shopping-cart overlay-add-cart-icon"></i>
+		                        	</a>
+								</div>
+								<div class="product-element-overlay-items-cart">
+									<a href="#" class="overlay-view " data-toggle="modal" >
+		                            <i class="fa fa-eye overlay-view-icon"></i>
+		                        	</a>
+								</div>
+		                    </div>
+		                    <div class="product-content-element-title">
+		                        <a href=""><p>Hoa đỏ Mỹ</p></a>
+		                    </div>
+		                    <div class="product-content-element-price">
+		                        <span class="product-content-element-price-current"> 150.000₫ </span>
+		                    </div>
+						</div>
+					</div>
+					<div id="box-2" class="container-product-bottom-list-padding col-sm-12">
+						<div class="product-bottom-content">
+							<a href=""><img class="product-content-img-element" src="images/container/product/img3.jpg" alt=""></a>
+							<div class="product-element-overlay-bachground"></div>
+							<div class="product-element-overlay">
+								<div  class="product-element-overlay-items">
+									<a onclick="addcart(this)" class="overlay-add-cart ">
+		                            <i  class="fa fa-shopping-cart overlay-add-cart-icon"></i>
+		                        	</a>
+								</div>
+								<div class="product-element-overlay-items-cart">
+									<a href="#" class="overlay-view " data-toggle="modal" >
+		                            <i class="fa fa-eye overlay-view-icon"></i>
+		                        	</a>
+								</div>
+		                    </div>
+		                    <div class="product-content-element-title">
+		                        <a href=""><p>Dưa leo Đà lạt</p></a>
+		                    </div>
+		                    <div class="product-content-element-price">
+		                        <span class="product-content-element-price-current"> 65.000₫ </span>
+		                    </div>
+						</div>
+					</div>
+					<div class="container-product-bottom-list-padding col-sm-12">
+						<div class="product-bottom-content">
+							<a href=""><img class="product-content-img-element" src="images/container/product/img4.jpg" alt=""></a>
+							<div class="product-element-overlay-bachground"></div>
+							<div class="product-content-element-sale-off">
+		                        <span class="product-content-element-percent">-33%</span>
+		                    </div>
+							<div class="product-element-overlay">
+		                        <div class="product-element-overlay-items">
+									<a onclick="addcart(this)" class="overlay-add-cart ">
+		                            <i  class="fa fa-shopping-cart overlay-add-cart-icon"></i>
+		                        	</a>
+								</div>
+								<div class="product-element-overlay-items-cart">
+									<a href="#" class="overlay-view " data-toggle="modal" >
+		                            <i class="fa fa-eye overlay-view-icon"></i>
+		                        	</a>
+								</div>
+		                    </div>
+		                    <div class="product-content-element-title">
+		                        <a href=""><p>Cà chua Đà lạt</p></a>
+		                    </div>
+		                    <div class="product-content-element-price">
+		                        <span class="product-content-element-price-current"> 30.000₫ </span>
+		                        <span class="product-content-element-price-old"> 45.000₫ </span>
+		                    </div>
+						</div>
+					</div>
+					<div id="box-3"  class="container-product-bottom-list-padding  col-sm-12">
+						<div class="product-bottom-content">
+							<a href=""><img class="product-content-img-element" src="images/container/product/img5.jpg" alt=""></a>
+							<div class="product-element-overlay-bachground"></div>
+							<div class="product-content-element-sale-off">
+		                        <span class="product-content-element-percent">-33%</span>
+		                    </div>
+							<div class="product-element-overlay">
+		                        <div class="product-element-overlay-items">
+									<a onclick="addcart(this)" class="overlay-add-cart ">
+		                            <i  class="fa fa-shopping-cart overlay-add-cart-icon"></i>
+		                        	</a>
+								</div>
+								<div class="product-element-overlay-items-cart">
+									<a href="#" class="overlay-view " data-toggle="modal" >
+		                            <i class="fa fa-eye overlay-view-icon"></i>
+		                        	</a>
+								</div>
+		                    </div>
+		                    <div class="product-content-element-title">
+		                        <a href=""><p>Nho đỏ không hạt Úc</p></a>
+		                    </div>
+		                    <div class="product-content-element-price">
+		                        <span class="product-content-element-price-current"> 30.000₫ </span>
+		                        <span class="product-content-element-price-old"> 45.000₫ </span>
+		                    </div>
+						</div>
+					</div>
+					<div class="container-product-bottom-list-padding col-sm-12">
+						<div class="product-bottom-content">
+							<a href=""><img class="product-content-img-element" src="images/container/product/img6.jpg" alt=""></a>
+							<div class="product-element-overlay-bachground"></div>
+							<div class="product-content-element-sale-off">
+		                        <span class="product-content-element-percent">-22%</span>
+		                    </div>
+							<div class="product-element-overlay">
+		                        <div class="product-element-overlay-items">
+									<a onclick="addcart(this)" class="overlay-add-cart ">
+		                            <i  class="fa fa-shopping-cart overlay-add-cart-icon"></i>
+		                        	</a>
+								</div>
+								<div class="product-element-overlay-items-cart">
+									<a href="#" class="overlay-view " data-toggle="modal" >
+		                            <i class="fa fa-eye overlay-view-icon"></i>
+		                        	</a>
+								</div>
+		                    </div>
+		                    <div class="product-content-element-title">
+		                        <a href=""><p>Dâu tây loại 1</p></a>
+		                    </div>
+		                    <div class="product-content-element-price">
+		                        <span class="product-content-element-price-current"> 250.000₫ </span>
+		                        <span class="product-content-element-price-old"> 320.000₫ </span>
+		                    </div>
+						</div>
+					</div>
+					<div id="box-4"class="container-product-bottom-list-padding col-sm-12">
+						<div class="product-bottom-content">
+							<a href=""><img class="product-content-img-element" src="images/container/product/img7.jpg" alt=""></a>
+							<div class="product-element-overlay-bachground"></div>
+							<div class="product-element-overlay">
+								<div  class="product-element-overlay-items">
+									<a onclick="addcart(this)" class="overlay-add-cart ">
+		                            <i  class="fa fa-shopping-cart overlay-add-cart-icon"></i>
+		                        	</a>
+								</div>
+								<div class="product-element-overlay-items-cart">
+									<a href="#" class="overlay-view " data-toggle="modal" >
+		                            <i class="fa fa-eye overlay-view-icon"></i>
+		                        	</a>
+								</div>
+		                    </div>
+		                    <div class="product-content-element-title">
+		                        <a href=""><p>Quả Kiwi xanh</p></a>
+		                    </div>
+		                    <div class="product-content-element-price">
+		                        <span class="product-content-element-price-current"> 250.000₫ </span>
+		                    </div>
+						</div>
+					</div>
+					<div class="container-product-bottom-list-padding col-sm-12">
+						<div class="product-bottom-content">
+							<a href=""><img class="product-content-img-element" src="images/container/product/img8.jpg" alt=""></a>
+							<div class="product-element-overlay-bachground"></div>
+							<div class="product-content-element-sale-off">
+		                        <span class="product-content-element-percent">-13%</span>
+		                    </div>
+							<div class="product-element-overlay">
+		                        <div class="product-element-overlay-items">
+									<a onclick="addcart(this)" class="overlay-add-cart ">
+		                            <i  class="fa fa-shopping-cart overlay-add-cart-icon"></i>
+		                        	</a>
+								</div>
+								<div class="product-element-overlay-items-cart">
+									<a href="#" class="overlay-view " data-toggle="modal" >
+		                            <i class="fa fa-eye overlay-view-icon"></i>
+		                        	</a>
+								</div>
+		                    </div>
+		                    <div class="product-content-element-title">
+		                        <a href=""><p>Chanh dây đỏ Úc</p></a>
+		                    </div>
+		                    <div class="product-content-element-price">
+		                        <span class="product-content-element-price-current"> 400.000₫ </span>
+		                        <span class="product-content-element-price-old"> 460.000₫ </span>
+		                    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+	<section id="section-box-2" class="container-P">
+		<div class="container-product">
+			<div class="container-product-top">
+				<div class="container-product-top-left">
+					<h2 class="container-product-top-title">RAU TƯƠI MỚI</h2>
+				</div>
+				<div class="container-product-top-right">
+					<ul class="container-product-top-list">
+						<a  href=""><li style="padding-right: 20px;" class="container-product-top-list-item">Rau quả</li></a>
+						<a href=""><li style="padding: 0 10px;" class="container-product-top-list-item">Hoa quả</li></a>
+						<a href=""><li style="padding: 0 10px;" class="container-product-top-list-item">Thịt</li></a>
+						<a href=""><li style="padding-left: 20px;" class="container-product-top-list-item">Hải sản</li></a>
+					</ul>
+				</div>
+			</div>
+			<div class="container-product-bottom ">
+				<div class="container-product-bottom-list slider">
+					<div class="container-product-bottom-list-padding">
+						<div class="product-bottom-content">
+							<a href=""><img class="product-content-img-element" src="images/container/product/img1.jpg" alt=""></a>
+							<div class="product-element-overlay-bachground"></div>
+							<div class="product-element-overlay">
+								<div  class="product-element-overlay-items">
+									<a onclick="addcart(this)" class="overlay-add-cart ">
+		                            <i  class="fa fa-shopping-cart overlay-add-cart-icon"></i>
+		                        	</a>
+								</div>
+								<div class="product-element-overlay-items-cart">
+									<a href="#" class="overlay-view " data-toggle="modal" >
+		                            <i class="fa fa-eye overlay-view-icon"></i>
+		                        	</a>
+								</div>
+		                    </div>
+		                    <div class="product-content-element-title">
+		                        <a href=""><p>Vải thiều loại to</p></a>
+		                    </div>
+		                    <div class="product-content-element-price">
+		                        <span class="product-content-element-price-current"> 80.000₫ </span>
+		                    </div>
+						</div>
+					</div>
+					<div class="container-product-bottom-list-padding">
+						<div class="product-bottom-content">
+							<a href=""><img class="product-content-img-element" src="images/container/product/img2.jpg" alt=""></a>
+							<div class="product-element-overlay-bachground"></div>
+							<div class="product-element-overlay">
+								<div  class="product-element-overlay-items">
+									<a onclick="addcart(this)" class="overlay-add-cart ">
+		                            <i  class="fa fa-shopping-cart overlay-add-cart-icon"></i>
+		                        	</a>
+								</div>
+								<div class="product-element-overlay-items-cart">
+									<a href="#" class="overlay-view " data-toggle="modal" >
+		                            <i class="fa fa-eye overlay-view-icon"></i>
+		                        	</a>
+								</div>
+		                    </div>
+		                    <div class="product-content-element-title">
+		                        <a href=""><p>Hoa đỏ Mỹ</p></a>
+		                    </div>
+		                    <div class="product-content-element-price">
+		                        <span class="product-content-element-price-current"> 150.000₫ </span>
+		                    </div>
+						</div>
+					</div>
+					<div class="container-product-bottom-list-padding">
+						<div class="product-bottom-content">
+							<a href=""><img class="product-content-img-element" src="images/container/product/img3.jpg" alt=""></a>
+							<div class="product-element-overlay-bachground"></div>
+							<div class="product-element-overlay">
+								<div  class="product-element-overlay-items">
+									<a onclick="addcart(this)" class="overlay-add-cart ">
+		                            <i  class="fa fa-shopping-cart overlay-add-cart-icon"></i>
+		                        	</a>
+								</div>
+								<div class="product-element-overlay-items-cart">
+									<a href="#" class="overlay-view " data-toggle="modal" >
+		                            <i class="fa fa-eye overlay-view-icon"></i>
+		                        	</a>
+								</div>
+		                    </div>
+		                    <div class="product-content-element-title">
+		                        <a href=""><p>Dưa leo Đà lạt</p></a>
+		                    </div>
+		                    <div class="product-content-element-price">
+		                        <span class="product-content-element-price-current"> 65.000₫ </span>
+		                    </div>
+						</div>
+					</div>
+					<div class="container-product-bottom-list-padding">
+						<div class="product-bottom-content">
+							<a href=""><img class="product-content-img-element" src="images/container/product/img4.jpg" alt=""></a>
+							<div class="product-element-overlay-bachground"></div>
+							<div class="product-content-element-sale-off">
+		                        <span class="product-content-element-percent">-33%</span>
+		                    </div>
+							<div class="product-element-overlay">
+		                        <div class="product-element-overlay-items">
+									<a onclick="addcart(this)" class="overlay-add-cart ">
+		                            <i  class="fa fa-shopping-cart overlay-add-cart-icon"></i>
+		                        	</a>
+								</div>
+								<div class="product-element-overlay-items-cart">
+									<a href="#" class="overlay-view " data-toggle="modal" >
+		                            <i class="fa fa-eye overlay-view-icon"></i>
+		                        	</a>
+								</div>
+		                    </div>
+		                    <div class="product-content-element-title">
+		                        <a href=""><p>Cà chua Đà lạt</p></a>
+		                    </div>
+		                    <div class="product-content-element-price">
+		                        <span class="product-content-element-price-current"> 30.000₫ </span>
+		                        <span class="product-content-element-price-old"> 45.000₫ </span>
+		                    </div>
+						</div>
+					</div>
+					<div class="container-product-bottom-list-padding">
+						<div class="product-bottom-content">
+							<a href=""><img class="product-content-img-element" src="images/container/product/img5.jpg" alt=""></a>
+							<div class="product-element-overlay-bachground"></div>
+							<div class="product-content-element-sale-off">
+		                        <span class="product-content-element-percent">-33%</span>
+		                    </div>
+							<div class="product-element-overlay">
+		                        <div class="product-element-overlay-items">
+									<a onclick="addcart(this)" class="overlay-add-cart ">
+		                            <i  class="fa fa-shopping-cart overlay-add-cart-icon"></i>
+		                        	</a>
+								</div>
+								<div class="product-element-overlay-items-cart">
+									<a href="#" class="overlay-view " data-toggle="modal" >
+		                            <i class="fa fa-eye overlay-view-icon"></i>
+		                        	</a>
+								</div>
+		                    </div>
+		                    <div class="product-content-element-title">
+		                        <a href=""><p>Nho đỏ không hạt Úc</p></a>
+		                    </div>
+		                    <div class="product-content-element-price">
+		                        <span class="product-content-element-price-current"> 30.000₫ </span>
+		                        <span class="product-content-element-price-old"> 45.000₫ </span>
+		                    </div>
+						</div>
+					</div>
+					<div class="container-product-bottom-list-padding">
+						<div class="product-bottom-content">
+							<a href=""><img class="product-content-img-element" src="images/container/product/img6.jpg" alt=""></a>
+							<div class="product-element-overlay-bachground"></div>
+							<div class="product-content-element-sale-off">
+		                        <span class="product-content-element-percent">-22%</span>
+		                    </div>
+							<div class="product-element-overlay">
+		                        <div class="product-element-overlay-items">
+									<a onclick="addcart(this)" class="overlay-add-cart ">
+		                            <i  class="fa fa-shopping-cart overlay-add-cart-icon"></i>
+		                        	</a>
+								</div>
+								<div class="product-element-overlay-items-cart">
+									<a href="#" class="overlay-view " data-toggle="modal" >
+		                            <i class="fa fa-eye overlay-view-icon"></i>
+		                        	</a>
+								</div>
+		                    </div>
+		                    <div class="product-content-element-title">
+		                        <a href=""><p>Dâu tây loại 1</p></a>
+		                    </div>
+		                    <div class="product-content-element-price">
+		                        <span class="product-content-element-price-current"> 250.000₫ </span>
+		                        <span class="product-content-element-price-old"> 320.000₫ </span>
+		                    </div>
+						</div>
+					</div>
+					<div class="container-product-bottom-list-padding">
+						<div class="product-bottom-content">
+							<a href=""><img class="product-content-img-element" src="images/container/product/img7.jpg" alt=""></a>
+							<div class="product-element-overlay-bachground"></div>
+							<div class="product-element-overlay">
+								<div  class="product-element-overlay-items">
+									<a onclick="addcart(this)" class="overlay-add-cart ">
+		                            <i  class="fa fa-shopping-cart overlay-add-cart-icon"></i>
+		                        	</a>
+								</div>
+								<div class="product-element-overlay-items-cart">
+									<a href="#" class="overlay-view " data-toggle="modal" >
+		                            <i class="fa fa-eye overlay-view-icon"></i>
+		                        	</a>
+								</div>
+		                    </div>
+		                    <div class="product-content-element-title">
+		                        <a href=""><p>Quả Kiwi xanh</p></a>
+		                    </div>
+		                    <div class="product-content-element-price">
+		                        <span class="product-content-element-price-current"> 250.000₫ </span>
+		                    </div>
+						</div>
+					</div>
+					<div class="container-product-bottom-list-padding">
+						<div class="product-bottom-content">
+							<a href=""><img class="product-content-img-element" src="images/container/product/img8.jpg" alt=""></a>
+							<div class="product-element-overlay-bachground"></div>
+							<div class="product-content-element-sale-off">
+		                        <span class="product-content-element-percent">-13%</span>
+		                    </div>
+							<div class="product-element-overlay">
+		                        <div class="product-element-overlay-items">
+									<a onclick="addcart(this)" class="overlay-add-cart ">
+		                            <i  class="fa fa-shopping-cart overlay-add-cart-icon"></i>
+		                        	</a>
+								</div>
+								<div class="product-element-overlay-items-cart">
+									<a href="#" class="overlay-view " data-toggle="modal" >
+		                            <i class="fa fa-eye overlay-view-icon"></i>
+		                        	</a>
+								</div>
+		                    </div>
+		                    <div class="product-content-element-title">
+		                        <a href=""><p>Chanh dây đỏ Úc</p></a>
+		                    </div>
+		                    <div class="product-content-element-price">
+		                        <span class="product-content-element-price-current"> 400.000₫ </span>
+		                        <span class="product-content-element-price-old"> 460.000₫ </span>
+		                    </div>
+						</div>
+					</div>
+				</div>
+				<a href=""><img src="images/container/banner2-1.png" alt="#" class="container-product-banner-next"></a>
+			</div>
+		</div>
+	</section>
+	<section id="section-box-3" class="container-P">
+		<div class="container-product">
+			<div class="container-product-top">
+				<div class="container-product-top-left">
+					<h2 class="container-product-top-title">THỰC PHẨM KHÔ</h2>
+				</div>
+				<div class="container-product-top-right">
+					<ul class="container-product-top-list">
+						<a  href=""><li style="padding-right: 20px;" class="container-product-top-list-item">Rau quả</li></a>
+						<a href=""><li style="padding: 0 10px;" class="container-product-top-list-item">Hoa quả</li></a>
+						<a href=""><li style="padding: 0 10px;" class="container-product-top-list-item">Thịt</li></a>
+						<a href=""><li style="padding-left: 20px;" class="container-product-top-list-item">Hải sản</li></a>
+					</ul>
+				</div>
+			</div>
+			<div class="container-product-bottom ">
+				<div class="container-product-bottom-list row">
+					<div class="container-product-bottom-list-padding col-xs-6 col-md-3 col-lg-3">
+						<div class="product-bottom-content">
+							<a href=""><img class="product-content-img-element" src="images/container/product/img1.jpg" alt=""></a>
+							<div class="product-element-overlay-bachground"></div>
+							<div class="product-element-overlay">
+								<div  class="product-element-overlay-items">
+									<a onclick="addcart(this)" class="overlay-add-cart ">
+		                            <i  class="fa fa-shopping-cart overlay-add-cart-icon"></i>
+		                        	</a>
+								</div>
+								<div class="product-element-overlay-items-cart">
+									<a href="#" class="overlay-view " data-toggle="modal" >
+		                            <i class="fa fa-eye overlay-view-icon"></i>
+		                        	</a>
+								</div>
+		                    </div>
+		                    <div class="product-content-element-title">
+		                        <a href=""><p>Vải thiều loại to</p></a>
+		                    </div>
+		                    <div class="product-content-element-price">
+		                        <span class="product-content-element-price-current"> 80.000₫ </span>
+		                    </div>
+						</div>
+					</div>
+					<div class="container-product-bottom-list-padding col-xs-6 col-md-3 col-lg-3">
+						<div class="product-bottom-content">
+							<a href=""><img class="product-content-img-element" src="images/container/product/img2.jpg" alt=""></a>
+							<div class="product-element-overlay-bachground"></div>
+							<div class="product-element-overlay">
+								<div  class="product-element-overlay-items">
+									<a onclick="addcart(this)" class="overlay-add-cart ">
+		                            <i  class="fa fa-shopping-cart overlay-add-cart-icon"></i>
+		                        	</a>
+								</div>
+								<div class="product-element-overlay-items-cart">
+									<a href="#" class="overlay-view " data-toggle="modal" >
+		                            <i class="fa fa-eye overlay-view-icon"></i>
+		                        	</a>
+								</div>
+		                    </div>
+		                    <div class="product-content-element-title">
+		                        <a href=""><p>Hoa đỏ Mỹ</p></a>
+		                    </div>
+		                    <div class="product-content-element-price">
+		                        <span class="product-content-element-price-current"> 150.000₫ </span>
+		                    </div>
+						</div>
+					</div>
+					<div class="container-product-bottom-list-padding col-xs-6 col-md-3 col-lg-3">
+						<div class="product-bottom-content">
+							<a href=""><img class="product-content-img-element" src="images/container/product/img3.jpg" alt=""></a>
+							<div class="product-element-overlay-bachground"></div>
+							<div class="product-element-overlay">
+								<div  class="product-element-overlay-items">
+									<a onclick="addcart(this)" class="overlay-add-cart ">
+		                            <i  class="fa fa-shopping-cart overlay-add-cart-icon"></i>
+		                        	</a>
+								</div>
+								<div class="product-element-overlay-items-cart">
+									<a href="#" class="overlay-view " data-toggle="modal" >
+		                            <i class="fa fa-eye overlay-view-icon"></i>
+		                        	</a>
+								</div>
+		                    </div>
+		                    <div class="product-content-element-title">
+		                        <a href=""><p>Dưa leo Đà lạt</p></a>
+		                    </div>
+		                    <div class="product-content-element-price">
+		                        <span class="product-content-element-price-current"> 65.000₫ </span>
+		                    </div>
+						</div>
+					</div>
+					<div class="container-product-bottom-list-padding col-xs-6 col-md-3 col-lg-3">
+						<div class="product-bottom-content">
+							<a href=""><img class="product-content-img-element" src="images/container/product/img4.jpg" alt=""></a>
+							<div class="product-element-overlay-bachground"></div>
+							<div class="product-content-element-sale-off">
+		                        <span class="product-content-element-percent">-33%</span>
+		                    </div>
+							<div class="product-element-overlay">
+		                        <div class="product-element-overlay-items">
+									<a onclick="addcart(this)" class="overlay-add-cart ">
+		                            <i  class="fa fa-shopping-cart overlay-add-cart-icon"></i>
+		                        	</a>
+								</div>
+								<div class="product-element-overlay-items-cart">
+									<a href="#" class="overlay-view " data-toggle="modal" >
+		                            <i class="fa fa-eye overlay-view-icon"></i>
+		                        	</a>
+								</div>
+		                    </div>
+		                    <div class="product-content-element-title">
+		                        <a href=""><p>Cà chua Đà lạt</p></a>
+		                    </div>
+		                    <div class="product-content-element-price">
+		                        <span class="product-content-element-price-current"> 30.000₫ </span>
+		                        <span class="product-content-element-price-old"> 45.000₫ </span>
+		                    </div>
+						</div>
+					</div>
+					<div class="container-product-bottom-list-padding col-xs-6 col-md-3 col-lg-3">
+						<div class="product-bottom-content">
+							<a href=""><img class="product-content-img-element" src="images/container/product/img5.jpg" alt=""></a>
+							<div class="product-element-overlay-bachground"></div>
+							<div class="product-content-element-sale-off">
+		                        <span class="product-content-element-percent">-33%</span>
+		                    </div>
+							<div class="product-element-overlay">
+		                        <div class="product-element-overlay-items">
+									<a onclick="addcart(this)" class="overlay-add-cart ">
+		                            <i  class="fa fa-shopping-cart overlay-add-cart-icon"></i>
+		                        	</a>
+								</div>
+								<div class="product-element-overlay-items-cart">
+									<a href="#" class="overlay-view " data-toggle="modal" >
+		                            <i class="fa fa-eye overlay-view-icon"></i>
+		                        	</a>
+								</div>
+		                    </div>
+		                    <div class="product-content-element-title">
+		                        <a href=""><p>Nho đỏ không hạt Úc</p></a>
+		                    </div>
+		                    <div class="product-content-element-price">
+		                        <span class="product-content-element-price-current"> 30.000₫ </span>
+		                        <span class="product-content-element-price-old"> 45.000₫ </span>
+		                    </div>
+						</div>
+					</div>
+					<div class="container-product-bottom-list-padding col-xs-6 col-md-3 col-lg-3">
+						<div class="product-bottom-content">
+							<a href=""><img class="product-content-img-element" src="images/container/product/img6.jpg" alt=""></a>
+							<div class="product-element-overlay-bachground"></div>
+							<div class="product-content-element-sale-off">
+		                        <span class="product-content-element-percent">-22%</span>
+		                    </div>
+							<div class="product-element-overlay">
+		                        <div class="product-element-overlay-items">
+									<a onclick="addcart(this)" class="overlay-add-cart ">
+		                            <i  class="fa fa-shopping-cart overlay-add-cart-icon"></i>
+		                        	</a>
+								</div>
+								<div class="product-element-overlay-items-cart">
+									<a href="#" class="overlay-view " data-toggle="modal" >
+		                            <i class="fa fa-eye overlay-view-icon"></i>
+		                        	</a>
+								</div>
+		                    </div>
+		                    <div class="product-content-element-title">
+		                        <a href=""><p>Dâu tây loại 1</p></a>
+		                    </div>
+		                    <div class="product-content-element-price">
+		                        <span class="product-content-element-price-current"> 250.000₫ </span>
+		                        <span class="product-content-element-price-old"> 320.000₫ </span>
+		                    </div>
+						</div>
+					</div>
+					<div class="container-product-bottom-list-padding col-xs-6 col-md-3 col-lg-3">
+						<div class="product-bottom-content">
+							<a href=""><img class="product-content-img-element" src="images/container/product/img7.jpg" alt=""></a>
+							<div class="product-element-overlay-bachground"></div>
+							<div class="product-element-overlay">
+								<div  class="product-element-overlay-items">
+									<a onclick="addcart(this)" class="overlay-add-cart ">
+		                            <i  class="fa fa-shopping-cart overlay-add-cart-icon"></i>
+		                        	</a>
+								</div>
+								<div class="product-element-overlay-items-cart">
+									<a href="#" class="overlay-view " data-toggle="modal" >
+		                            <i class="fa fa-eye overlay-view-icon"></i>
+		                        	</a>
+								</div>
+		                    </div>
+		                    <div class="product-content-element-title">
+		                        <a href=""><p>Quả Kiwi xanh</p></a>
+		                    </div>
+		                    <div class="product-content-element-price">
+		                        <span class="product-content-element-price-current"> 250.000₫ </span>
+		                    </div>
+						</div>
+					</div>
+					<div class="container-product-bottom-list-padding col-xs-6 col-md-3 col-lg-3">
+						<div class="product-bottom-content">
+							<a href=""><img class="product-content-img-element" src="images/container/product/img8.jpg" alt=""></a>
+							<div class="product-element-overlay-bachground"></div>
+							<div class="product-content-element-sale-off">
+		                        <span class="product-content-element-percent">-13%</span>
+		                    </div>
+							<div class="product-element-overlay">
+		                        <div class="product-element-overlay-items">
+									<a onclick="addcart(this)" class="overlay-add-cart ">
+		                            <i  class="fa fa-shopping-cart overlay-add-cart-icon"></i>
+		                        	</a>
+								</div>
+								<div class="product-element-overlay-items-cart">
+									<a href="#" class="overlay-view " data-toggle="modal" >
+		                            <i class="fa fa-eye overlay-view-icon"></i>
+		                        	</a>
+								</div>
+		                    </div>
+		                    <div class="product-content-element-title">
+		                        <a href=""><p>Chanh dây đỏ Úc</p></a>
+		                    </div>
+		                    <div class="product-content-element-price">
+		                        <span class="product-content-element-price-current"> 400.000₫ </span>
+		                        <span class="product-content-element-price-old"> 460.000₫ </span>
+		                    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="container-P">
+		<div class="container-product row">
+			<div  class=" p-top col-xs-12 col-md-6 col-lg-6">
+				<a href=""><img class="banner-informasion" src="images/container/banner3-1.png"></a>
+			</div>
+			<div  class="p-bottom col-xs-12 col-md-6 col-lg-6">
+				<a href=""><img class="banner-informasion" src="images/container/banner3-2.png"></a>
+			</div>
+		</div>
+	</div>
+	<section id="section-box-4" class="container-P">
+		<div class="container-product">
+			<div class="informasion-top">
+				<div class="informasion-updates">
+					<H2 class="informasion-updates-title">TIN CẬP NHẬT</H2>
+				</div>
+				<div class="container-product-street"></div>
+				<div class="informasion-updates-content">
+					<i><p>Tin tức vệ sinh an toàn thực phẩm cập nhật mới nhất<br> mỗi ngày cho bạn</p></i>
+				</div>
+			</div>
+			<div class="container-product-bottom row ">
+				<div class="col-md-4 col-lg-4">
+					<div class="container-blog">
+						<a href=""><img src="images/container/blog1.jpg" alt="#" class="container-blog-img"></a>
+						<div class="container-blog-title">
+							<h3 class="container-blog-title-items" title="Kỹ thuật trồng rau sạch trong chậu xốp tại nhà đơn giản"> <a style="color: #000" href="#">Kỹ thuật trồng rau sạch trong chậu xốp tại nhà đơn giản</a></h3>
+							<p> Tự trồng rau trong thùng xốp tại nhà là sự lựa chọn của rất nhiều gia đình trong thành phố bởi phương pháp trồng rau đơn giản, dễ trồng, dễ quản lý, an toàn và tiện lợi. Nhưng người...</p>
+							<div class="container-blog-button">
+								<a href=""><h3 class="container-blog-button-content">Chi tiết</h3></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-4">
+					<div class="container-blog">
+						<a href=""><img src="images/container/blog2.jpg" alt="#" class="container-blog-img"></a>
+						<div class="container-blog-title">
+							<h3 class="container-blog-title-items" title="Tự chế món thạch sữa chua thanh long lung linh sắc màu"> <a style="color: #000" href="#">Tự chế món thạch sữa chua thanh long lung linh sắc màu</a></h3>
+							<p> Thạch sữa chua thanh long là món ăn tráng miệng tuyệt vời cho các mẹ. Đặc biệt là các bạn trẻ. Bởi vì món ăn này rất thanh mát, dễ ăn, đẹp da và trông rất màu sắc bắt...</p>
+							<div class="container-blog-button">
+								<a href=""><h3 class="container-blog-button-content">Chi tiết</h3></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-4">
+					<div class="container-blog">
+						<a href=""><img src="images/container/blog3.jpg" alt="#" class="container-blog-img"></a>
+						<div class="container-blog-title">
+							<h3 class="container-blog-title-items" title="Những loại trái cây Nhật đắt như vàng ròng đổ bộ về Việt Nam"> <a style="color: #000" href="#">Những loại trái cây Nhật đắt như vàng ròng đổ bộ về Việt Nam</a></h3>
+							<p> Nhật Bản là đất nước có nhiều loại hoa quả có chất lượng thuộc hàng ngon nhất thế giới nhưng cũng vô cùng đắt đỏ. Đáng chú ý, nhiều loại quả do nông dân Nhật Bản trồng được đem...</p>
+							<div class="container-blog-button">
+								<a href=""><h3 class="container-blog-button-content">Chi tiết</h3></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="container-P">
+		<div class="container-product">
+			<div class="informasion-top">
+				<div class="informasion-updates">
+					<H2 class="informasion-updates-title">PHẢN HỒI CỦA KHÁCH</H2>
+				</div>
+				<div class="container-product-street"></div>
+				<div class="informasion-updates-content">
+					<i><p>Phản hồi của những khách hàng đã và đang sử dụng sản<br>phẩm trong suốt những năm qua</p></i>
+				</div>
+			</div>
+			<div class="container-product-bottom row ">
+				<div class="col-md-4 col-lg-4">
+					<div class="container-modol">
+						<a href=""><img src="images/container/modol1.jpg" alt="#" class="container-modol-img"></a>
+						<div class="container-blog-title">
+							<h3 class="container-blog-title-items" title="Kỹ thuật trồng rau sạch trong chậu xốp tại nhà đơn giản"> <a style="color: #000" href="#">Người mẫu - Ngọc Trinh</a></h3>
+							<p> Là một người khá kỹ tính, tôi luôn luôn lựa chọn những thực phẩm sạch nhất. Và đây là nơi tôi đặt trọng niềm tin</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-4">
+					<div class="container-modol">
+						<a href=""><img src="images/container/modol2.jpg" alt="#" class="container-modol-img"></a>
+						<div class="container-blog-title">
+							<h3 class="container-blog-title-items" title="Tự chế món thạch sữa chua thanh long lung linh sắc màu"> <a style="color: #000" href="#">Diễn Viên - Phương Trinh</a></h3>
+							<p>Là một người khá kỹ tính, tôi luôn luôn lựa chọn những thực phẩm sạch nhất. Và đây là nơi tôi đặt trọng niềm tin</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-4">
+					<div class="container-modol">
+						<a href=""><img src="images/container/modol3.jpg" alt="#" class="container-modol-img"></a>
+						<div class="container-blog-title">
+							<h3 class="container-blog-title-items" title="Những loại trái cây Nhật đắt như vàng ròng đổ bộ về Việt Nam"> <a style="color: #000" href="#">Ca sĩ - Hoàng Yến</a></h3>
+							<p> Là một người khá kỹ tính, tôi luôn luôn lựa chọn những thực phẩm sạch nhất. Và đây là nơi tôi đặt trọng niềm tin</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-brand">
+				<div class="container-brand-block slider1">
+					<div class="container-brand-block-img">
+						<img class="brand-block-img" src="images/container/brand1.png" alt="">
+					</div>
+					<div class="container-brand-block-img">
+						<img class="brand-block-img" src="images/container/brand2.png" alt="">
+					</div>
+					<div class="container-brand-block-img">
+						<img class="brand-block-img" src="images/container/brand3.png" alt="">
+					</div>
+					<div class="container-brand-block-img">
+						<img class="brand-block-img" src="images/container/brand4.png" alt="">
+					</div>
+					<div class="container-brand-block-img">
+						<img class="brand-block-img" src="images/container/brand5.png" alt="">
+					</div>
+					<div class="container-brand-block-img">
+						<img class="brand-block-img" src="images/container/brand6.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div id="scroll-overlay-content" class="list-group scroll-overlay_left">
+        <a class="list-group-item list-group-item-action scroll-overlay_left-element overlay-one" href="#section-box-1">
+            <img src="images/scroll/img1.png" alt="">
+            <span class="scroll-overlay-label">Trái Cây</span>
+        </a>
+        <a class="list-group-item list-group-item-action scroll-overlay_left-element overlay-two" href="#section-box-2">
+            <img src="images/scroll/img2.png" alt=""> 
+            <span class="scroll-overlay-label">Rau Tươi</span>   
+        </a>
+        <a class="list-group-item list-group-item-action scroll-overlay_left-element overlay-three" href="#section-box-3">
+            <img src="images/scroll/img3.png" alt="">   
+            <span class="scroll-overlay-label">Thực Phẩm khô</span> 
+        </a>
+        <a class="list-group-item list-group-item-action scroll-overlay_left-element overlay-four" href="#section-box-4">
+            <img src="images/scroll/img4.png" alt=""> 
+            <span class="scroll-overlay-label">Tin tức</span>   
+        </a>
+    </div>
+    <div id="scroll-overlay-content" class="list-group scroll-overlay_right">
+        <a class="list-group-item list-group-item-action scroll-overlay_right-element-item " href="#">
+            	<i class="fas fa-chevron-up"></i>
+        </a>   
+    </div>
+	<div class="footer">
+		<div class="footer-margin">
+			<div class="footer-container row ">
+				<div class="footer-container-content col-xs-6 col-md-3 col-lg-3">
+					<h2 class="footer-container-title">LIÊN HỆ</h2>
+					<ul style="list-style: none;" class="footer-container-items">
+						<li class="footer-container-items-content">
+							<p>Chúng tôi chuyên cung cấp các sản phẩm thực phẩm sạch an toàn cho sức khỏe con người</p>
+						</li>
+						<li class="footer-container-items-content">
+							<i class="block_icon fa fa-map-marker"></i>
+							<p>Hồ Gươm</p>
+						</li>
+						<li class="footer-container-items-content">
+							<i class="block_icon fa fa-phone"></i>
+							<a class="footer-items-hover" href="tel:0912117494"> 0912117494</a>
+						</li>
+						<li class="footer-container-items-content">
+							<p style="padding: 0px 24px;">Thứ 2 - Chủ nhật: 9:00 - 18:00</p>
+						</li>
+						<li class="footer-container-items-content">
+							<i class="block_icon fa fa-envelope"></i>
+							<a class="footer-items-hover" title="Dualeotheme@gmail.com" href="mailto:Dualeotheme@gmail.com"> Dualeotheme@gmail.com</a>
+						</li>
+					</ul>
+				</div >
+				<div class="footer-container-content col-xs-6 col-md-3 col-lg-3">
+					<h2 class="footer-container-title">DANH MỤC</h2>
+					<ul class="footer-container-items-boder">
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Trang chủ</a>
+						</li>
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Sản phẩm</a>
+						</li>
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Giới thiệu</a>
+						</li>
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Tin tức</a>
+						</li>
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Liên hệ</a>
+						</li>
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Chỉ đường</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-container-content col-xs-6 col-md-3 col-lg-3">
+					<h2 class="footer-container-title">HỖ TRỢ KHÁCH HÀNG</h2>
+					<ul class="footer-container-items-boder">
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Trang chủ</a>
+						</li>
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Sản phẩm</a>
+						</li>
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Giới thiệu</a>
+						</li>
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Tin tức</a>
+						</li>
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Liên hệ</a>
+						</li>
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Chỉ đường</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-container-content col-xs-6 col-md-3 col-lg-3">
+					<h2 class="footer-container-title">KẾT NỐI VỚI DUALEO</h2>
+					<ul class="footer-container-items-boder">
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Trang chủ</a>
+						</li>
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Sản phẩm</a>
+						</li>
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Giới thiệu</a>
+						</li>
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Tin tức</a>
+						</li>
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Liên hệ</a>
+						</li>
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Chỉ đường</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-end">
+			<div class="footer-margin row">
+				<div class="footer-end-container col-md-6">
+					<span>© Bản quyền thuộc về <b>Dualeo</b> <b class="fixline">|</b> Cung cấp bởi 
+						<a  rel="nofollow" title="Sapo">Sapo</a>
+					</span>
+				</div>
+				<div class="footer-end-container-end col-md-6">
+					<ul class="list-menu-footer">			
+						<li><a style="color: #fff" title="Trang chủ" href="/">Trang chủ</a></li>
+						
+						<li><a style="color: #fff" title="Sản phẩm" href="/collections/all">Sản phẩm</a></li>
+						
+						<li><a style="color: #fff" title="Giới thiệu" href="/gioi-thieu">Giới thiệu</a></li>
+						
+						<li><a style="color: #fff" title="Tin tức" href="/tin-tuc">Tin tức</a></li>
+						
+						<li><a style="color: #fff" title="Liên hệ" href="/lien-he">Liên hệ</a></li>
+						
+						<li><a style="color: #fff" title="Chỉ đường" href="/chi-duong">Chỉ đường</a></li>	
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<script src="js/jquery-3.5.1.slim.min.js"></script>
+	<!-- slick carousel -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$('.slider').slick({
+			slidesToShow: 4,
+			slidesToScroll: 2,
+			autoplay: true,
+			autoplaySpeed: 1000,
+			 responsive: [	
+			 				{
+                              breakpoint: 720,
+                              settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 1,
+                                autoplay: true,
+								autoplaySpeed: 5000,
+                              }
+                            },
+                            {
+                              breakpoint: 1024,
+                              settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 1,
+                                autoplay: true,
+								autoplaySpeed: 5000,
+                              }
+                            },  
+                            // điểm ngắt
+                            // { 
+                            //   breakpoint: 540,
+                            //   settings: "unslick"
+                            // }
+
+                          ]
+		});
+		$('.slider1').slick({
+			slidesToShow: 6,
+			autoplay: true,
+			 responsive: [	
+			 				{
+                              breakpoint: 720,
+                              settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 1,
+                                autoplay: true,
+								autoplaySpeed: 5000,
+                              }
+                            },
+                            {
+                              breakpoint: 1024,
+                              settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 1,
+                                autoplay: true,
+								autoplaySpeed: 5000,
+                              }
+                            },  
+                            // điểm ngắt
+                            // { 
+                            //   breakpoint: 540,
+                            //   settings: "unslick"
+                            // }
+
+                          ]
+		});
+	</script>
+	<!--end slick carousel -->
+	<script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/jquery3.5.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/control.js"></script>
+</body>
+</html>

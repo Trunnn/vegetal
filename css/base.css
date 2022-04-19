@@ -1,0 +1,70 @@
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.container-mid-content {
+    margin: 0 auto;
+    max-width: 1038px;
+    width: 81%;
+}
+.fa-chevron-down {
+    /* margin-right: 8px; */
+    vertical-align: bottom;
+    float: right;
+    /* margin-top: 3px; */
+    position: relative;
+    top: 1px;    
+    /* margin-left: 2px; */
+    font-size: 12px;
+    margin: 3px 8px 0 2px;
+}
+.fa-chevron-down:before {
+    content: "\f107";
+}
+
+.border-none {
+    border: none;
+}
+label{
+    display: none;
+}
+@keyframes menu-items-introduce{
+    from {
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes runtime {
+    from {
+      width: 0;
+    } to{
+      width: 64%;
+    }
+}
+
+@keyframes runword {
+    from {
+        margin-left: 0px;
+    } to {
+        margin-left: -500px;
+    }
+}
+
+@keyframes slowElement {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+a {
+    background-color: transparent;
+    text-decoration: none !important;
+}

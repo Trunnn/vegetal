@@ -1,0 +1,120 @@
+/*Mobile: width< 740px
+Table: width >= 740px and width < 1024px
+PC: >= 1024 px*/
+
+@media only screen and (max-width: 46.25em){
+	.menu-mobile-tablet {
+        display: block;
+        position: absolute !important;
+        z-index: 3000;
+        font-size: 32px;
+        margin-bottom: 0;
+        margin-bottom: 0;
+	    top: 90px;
+	    left: 15px;
+	    color: #adb5bd;
+    }
+    .header-footer{
+    	display: none;
+    }
+	.menu-mobile-tablet {
+        display: block;
+        position: fixed;
+        z-index: 3000;
+        font-size: 32px;
+        margin-bottom: 0;
+    }
+    .header-center {
+		width: 100%;
+		padding: 0 15px;
+	}
+	.header-mid-content{
+		width: 100%;
+		padding: 50px 15px;
+	}
+	.header-cart{
+		display: none;
+	}
+	.header-cart-reponsive{
+		display: flex;
+		position: absolute;
+    	right: 0;
+    	top: -55px;
+	}
+	.header-mid-container{
+		display: none;
+	}
+	.header-mid-content{
+		display: flex;
+	}
+	.logo-left{
+    	padding: 0;
+    	text-align: center;
+	}
+	#scroll-overlay-content{
+		display: none;
+	}
+	.container-mid-content{
+    	width: 100% !important;
+    	padding: 0;
+	}
+	.container-mid-content-bottom{
+		display: none;
+	}
+	.product-content-img-element{
+		width: 100% !important;
+		margin: 0 !important;
+    	object-fit: contain;
+	}
+	.container-product{
+		width: 100% !important;
+	}
+	.container-product-bottom-list{
+		justify-content: center;
+    	position: relative;
+	}
+	.p-top{
+    	padding-left: 15px;
+	}
+	.p-bottom{
+	    padding-right: 15px;
+	    margin-top: 15px;
+	}
+	.container-brand-block-img{
+		padding: 20px;
+	}
+	.footer-end-container-end{
+		display: none;
+	}
+	.brand-block-img{
+		width: auto;
+	}
+}
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+	.header-center {
+		width: 100%;
+		padding: 0 15px;
+	}
+	.header-mid-content{
+		width: 100%;
+		padding: 50px 15px;
+	}
+	.header-cart{
+		display: none;
+	}
+	.header-cart-reponsive{
+		display: flex;
+
+	}
+	.container-mid-content-bottom{
+		display: none;
+	}
+	.product-content-img-element{
+		width: 100% !important;
+		margin: 0 !important;
+    	object-fit: contain;
+	}
+	.container-P{
+		width: 100% !important;
+	}
+}

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Đăng nhập tài khoản DuaLeo-X</title>
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reponsive.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+    <!-- hỗ trợ  các trình duyệt cũ reponsive -->
+    <!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+    
+    <!-- slick carousel product -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+    <!-- end slick carousel product -->
+</head>
+<body>
+	<!-- header -->
+	<div class="header">
+		<div class="header-center">
+			<ul class="header-center-left">
+				<li class="header-center-left-l">Hotline:<p style="font-weight: 700">&#160;0912117494</p> </li>
+				<li class="header-center-left-r"><p style="font-weight: 700">Địa chỉ</p>: Hồ Gươm, Vietnam</li>
+			</ul>
+			<div class="header-center-right">
+				<i class="fas fa-user"></i>
+				<a href=""> Đăng Nhập</a>
+				<p>hoặc</p>
+				<a href="">Đăng Ký</a>
+			</div>
+		</div>
+	</div>
+	<!-- menu mobile tablet-->
+	<label for="nav-input-mobile-tablet" class="menu-mobile-tablet"><i class="fas fa-bars"></i></label> 
+    <input type="checkbox" hidden name="" class="nav-input-check" id="nav-input-mobile-tablet">
+    <label for="nav-input-mobile-tablet" class="overlay-mobile-tablet"></label> 
+    <nav class="header-menu_mobile-tablet">
+        <ul class="nav_mobile-tablet-list">
+            <li>
+                <a class="nav_mobile-tablet-link" href="#">Trang chủ</a>
+            </li>
+            <li>
+                <a class="nav_mobile-tablet-link" href="#">Giới thiệu</a>
+            </li>
+            <li>
+                <a class="nav_mobile-tablet-link" href="#">Sản phẩm</a>
+            </li>
+            <li>
+                <a class="nav_mobile-tablet-link" href="#">Khuyến mãi & Sự kiện</a>
+            </li>
+            <li>
+                <a class="nav_mobile-tablet-link" href="#">Tin tức</a>
+            </li>
+        </ul>
+    </nav>  
+    <!--end menu mobile tablet-->    
+	<div class="header-mid">
+		<div class="header-mid-content row">
+		     
+			<div  class="logo-left col-md-3 col-lg-3">
+				<img src="images/header/logo1.png" alt="#">
+			</div>
+			<div class="header-mid-container  col-md-8 col-lg-7">
+				<div class="header-mid-item ">
+					<a ><img src="images/header/logo2.png" alt=""></a>
+					<div class="header-mid-item-content">
+						<a href="" class="header-mid-item-content-top">Miễn phí vận chuyển</a>
+						<p class="header-mid-item-content-bottom">Bán kính 100 km</p>
+					</div>
+				</div>
+				<div class="header-mid-item ">
+					<a ><img src="images/header/logo3.png" alt=""></a>
+					<div class="header-mid-item-content">
+						<a href="" class="header-mid-item-content-top">Hỗ trợ 24/7</a>
+						<p class="header-mid-item-content-bottom">Hotline: <a style="font-weight: 700; color: #000;" href="">19001009</a></p>
+					</div>
+				</div>
+				<div class="header-mid-item">
+					<a ><img src="images/header/logo4.png" alt=""></a>
+					<div class="header-mid-item-content">
+						<a href="" class="header-mid-item-content-top">Giờ làm việc</a>
+						<p class="header-mid-item-content-bottom">T2-T7 Giờ hành chính</p>
+					</div>
+				</div>
+			</div>
+			<div style="padding: 0;text-align: end;" class="col-md-1 col-lg-2">
+				<div class="header-cart">
+					<i class="fa fa-shopping-bag"></i>
+					<div class="right-content">
+						<span class="label">Giỏ hàng</span>
+					</div>
+					<span class="cartCount" id="cart-total">0</span>
+				</div>
+				<div class="header-cart-reponsive">
+					<i class="fas fa-shopping-bag"></i>
+					<div class="cart">
+						<span class="cartCount-reponsive" id="cart-total">0</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-footer sticky-top">
+		<nav class=" header-footer-content navbar navbar-expand-lg navbar-light bg-light">
+	  		<a class="header-footer-home navbar-brand" href="#">Trang chủ</a>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    		<ul class="header-footer-nav navbar-nav mr-auto">
+	      			<li class="header-footer-items nav-item active">
+	        			<a class=" nav-link" href="#">Sản phẩm
+	        				<i class="fas fa-angle-right"></i>
+	        			</a>
+						<div  class="header-footer-hover">
+	        				<div class="header-footer-hover-items">
+	        					<H5 class="header-footer-title">Rau củ</H5>
+	        					<ul class="header-footer-element">
+	        						<a href=""><li class="header-footer-element-child">Rau tươi</li></a>
+	        						<a href=""><li class="header-footer-element-child">Rau vườn</li></a>
+	        						<a href=""><li class="header-footer-element-child">Rau sạch</li></a>
+	        						<a href=""><li class="header-footer-element-child">Rau củ nhập khẩu</li></a>
+	        					</ul>
+	        				</div>
+	        				<div class="header-footer-hover-items">
+	        					<H5 class="header-footer-title">Hoa quả</H5>
+	        					<ul class="header-footer-element">
+	        						<a href=""><li class="header-footer-element-child">Trái cây tươi</li></a>
+	        						<a href=""><li class="header-footer-element-child">Hoa quả sạch</li></a>
+	        						<a href=""><li class="header-footer-element-child">Hoa quả nhập khẩu</li></a>
+	        						<a href=""><li class="header-footer-element-child">Hoa quả tươi</li></a>
+	        					</ul>
+	        				</div>
+	        				<div class="header-footer-hover-items">
+	        					<H5 class="header-footer-title">Thịt</H5>
+	        					<ul class="header-footer-element">
+	        						<a href=""><li class="header-footer-element-child">Thịt gà</li></a>
+	        						<a href=""><li class="header-footer-element-child">Thịt lươn</li></a>
+	        						<a href=""><li class="header-footer-element-child">Thịt bò</li></a>
+	        						<a href=""><li class="header-footer-element-child">Thịt vịt</li></a>
+	        					</ul>
+	        				</div>
+	        				<div class="header-footer-hover-items">
+	        					<H5 class="header-footer-title">Hải Sản</H5>
+	        					<ul class="header-footer-element">
+	        						<a href=""><li class="header-footer-element-child">Ngao</li></a>
+	        						<a href=""><li class="header-footer-element-child">Sò huyết</li></a>
+	        						<a href=""><li class="header-footer-element-child">Cua</li></a>
+	        						<a href=""><li class="header-footer-element-child">Tôm</li></a>
+	        					</ul>
+	        				</div>
+	        			</div>
+	        		</li>
+	      			<li class="header-footer-items nav-item">
+	        			<a class="nav-link" href="#">Giới thiệu</a>	
+	      			</li>
+	      			<li class="nav-item header-footer-items">
+	        			<a class="nav-link" href="#">Tin tức <i class="fas fa-angle-right"></i></a>
+	        			<ul class="header-footer-element-hover">
+							<a href=""><li class="header-footer-element-child">Tin mới</li></a>
+							<a href=""><li class="header-footer-element-child">Tin quốc tế</li></a>
+							<a href=""><li class="header-footer-element-child">Tin trong nước</li></a>
+	        			</ul>
+	        		</li>
+			      	<li class="nav-item header-footer-items">
+			        	<a class="nav-link " href="#">Liên hệ</a>
+			      	</li>
+			      	<li class="nav-item header-footer-items">
+			        	<a class="nav-link " href="#">Chỉ đường</a>
+			      	</li>
+	    		</ul>
+				<form class="navbar-form navbar-left" action="/action_page.php">
+				  <div class="input-group input-group-seach">
+				    <input type="text" class="form-control" placeholder="Search">
+				    <button class="btn btn-default" type="submit">
+				        <i class="fas fa-search"></i>
+				     </button>
+				  </div>
+				</form>
+	  		</div>
+		</nav>
+	</div>
+	<!--end  header -->
+	<section class="container-P">
+		<div class="container-product row">
+			<div class="login-header col-xs-12 col-md-12">
+				<ul class="login-header-items">	
+					<li class="login-header-items-element">
+						<a href="file:///D:/khoGiaoDien1_thucPham/index.html"><span>Trang chủ</span></a>						
+						<span> <i class="fa fa-angle-right"></i></span>
+					</li>
+					<li class="login-header-items-element-name"><strong>Đăng nhập tài khoản</strong></li>
+				</ul>
+			</div>	
+
+			<div class="container-brand">
+				<div class="container-brand-block slider1">
+					<div class="container-brand-block-img">
+						<img class="brand-block-img" src="images/container/brand1.png" alt="">
+					</div>
+					<div class="container-brand-block-img">
+						<img class="brand-block-img" src="images/container/brand2.png" alt="">
+					</div>
+					<div class="container-brand-block-img">
+						<img class="brand-block-img" src="images/container/brand3.png" alt="">
+					</div>
+					<div class="container-brand-block-img">
+						<img class="brand-block-img" src="images/container/brand4.png" alt="">
+					</div>
+					<div class="container-brand-block-img">
+						<img class="brand-block-img" src="images/container/brand5.png" alt="">
+					</div>
+					<div class="container-brand-block-img">
+						<img class="brand-block-img" src="images/container/brand6.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="footer">
+		<div class="footer-margin">
+			<div class="footer-container row ">
+				<div class="footer-container-content col-xs-6 col-md-3 col-lg-3">
+					<h2 class="footer-container-title">LIÊN HỆ</h2>
+					<ul style="list-style: none;" class="footer-container-items">
+						<li class="footer-container-items-content">
+							<p>Chúng tôi chuyên cung cấp các sản phẩm thực phẩm sạch an toàn cho sức khỏe con người</p>
+						</li>
+						<li class="footer-container-items-content">
+							<i class="block_icon fa fa-map-marker"></i>
+							<p>Hồ Gươm</p>
+						</li>
+						<li class="footer-container-items-content">
+							<i class="block_icon fa fa-phone"></i>
+							<a class="footer-items-hover" href="tel:0912117494"> 0912117494</a>
+						</li>
+						<li class="footer-container-items-content">
+							<p style="padding: 0px 24px;">Thứ 2 - Chủ nhật: 9:00 - 18:00</p>
+						</li>
+						<li class="footer-container-items-content">
+							<i class="block_icon fa fa-envelope"></i>
+							<a class="footer-items-hover" title="Dualeotheme@gmail.com" href="mailto:Dualeotheme@gmail.com"> Dualeotheme@gmail.com</a>
+						</li>
+					</ul>
+				</div >
+				<div class="footer-container-content col-xs-6 col-md-3 col-lg-3">
+					<h2 class="footer-container-title">DANH MỤC</h2>
+					<ul class="footer-container-items-boder">
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Trang chủ</a>
+						</li>
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Sản phẩm</a>
+						</li>
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Giới thiệu</a>
+						</li>
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Tin tức</a>
+						</li>
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Liên hệ</a>
+						</li>
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Chỉ đường</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-container-content col-xs-6 col-md-3 col-lg-3">
+					<h2 class="footer-container-title">HỖ TRỢ KHÁCH HÀNG</h2>
+					<ul class="footer-container-items-boder">
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Trang chủ</a>
+						</li>
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Sản phẩm</a>
+						</li>
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Giới thiệu</a>
+						</li>
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Tin tức</a>
+						</li>
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Liên hệ</a>
+						</li>
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Chỉ đường</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-container-content col-xs-6 col-md-3 col-lg-3">
+					<h2 class="footer-container-title">KẾT NỐI VỚI DUALEO</h2>
+					<ul class="footer-container-items-boder">
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Trang chủ</a>
+						</li>
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Sản phẩm</a>
+						</li>
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Giới thiệu</a>
+						</li>
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Tin tức</a>
+						</li>
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Liên hệ</a>
+						</li>
+						<li class="footer-container-items-content-right">
+							<a href="#" class="footer-items-hover"> Chỉ đường</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-end">
+			<div class="footer-margin row">
+				<div class="footer-end-container col-md-6">
+					<span>© Bản quyền thuộc về <b>Dualeo</b> <b class="fixline">|</b> Cung cấp bởi 
+						<a  rel="nofollow" title="Sapo">Sapo</a>
+					</span>
+				</div>
+				<div class="footer-end-container-end col-md-6">
+					<ul class="list-menu-footer">			
+						<li><a style="color: #fff" title="Trang chủ" href="/">Trang chủ</a></li>
+						
+						<li><a style="color: #fff" title="Sản phẩm" href="/collections/all">Sản phẩm</a></li>
+						
+						<li><a style="color: #fff" title="Giới thiệu" href="/gioi-thieu">Giới thiệu</a></li>
+						
+						<li><a style="color: #fff" title="Tin tức" href="/tin-tuc">Tin tức</a></li>
+						
+						<li><a style="color: #fff" title="Liên hệ" href="/lien-he">Liên hệ</a></li>
+						
+						<li><a style="color: #fff" title="Chỉ đường" href="/chi-duong">Chỉ đường</a></li>	
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<script src="js/jquery-3.5.1.slim.min.js"></script>
+	<!-- slick carousel -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous"></script>
+	<!--end slick carousel -->
+	<script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/jquery3.5.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/control.js"></script>
+</body>
+</html>
